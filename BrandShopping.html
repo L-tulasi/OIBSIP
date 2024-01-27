@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Brand Shopping</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      line-height: 150%;
+    }
+
+
+  .container1{
+      width: 20%; /* Adjust the width as needed */
+      display: inline-block;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #99FF33 ;
+     font-family:Garamond;
+      
+    }
+ .container2{
+      width: 20%; /* Adjust the width as needed */
+      display: inline-block;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color:  #FF33CC;
+     font-family:Garamond;
+      
+    }
+.container1 img {
+      width: 250px; /* Make the image fill the container width */
+      height: 300px; /* Maintain the aspect ratio */
+      display: block; /* Remove extra space below the image */
+      margin: 0 auto; /* Center the image horizontally */
+    }
+
+.container2 img {
+      width: 250px; /* Make the image fill the container width */
+      height: 300px; /* Maintain the aspect ratio */
+      display: block; /* Remove extra space below the image */
+      margin: 0 auto; /* Center the image horizontally */
+    }
+ .inner-content {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
+    }
+
+ .container3{
+      width: 260px; /* Adjust the width as needed */
+      display: inline-block;
+      margin:10px;
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      height: 100px;
+       background-color:#99FF33;
+     font-family:Garamond;
+      
+    }
+
+ .container4{
+      width: 260px; /* Adjust the width as needed */
+      display: inline-block;
+      margin:10px;
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      height: 100px;
+       background-color: #FF33FF ;
+     font-family:Garamond;
+      
+    }
+
+   
+
+.dior {
+  font-size: 40px;
+  line-height: calc(20px + 20vh);
+/*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #99FF33; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #99FF33;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #99FF33;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #99FF33;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color:  ;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #99FF33;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #99FF33;;
+  }
+}
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: #99FF33;
+   
+    }
+
+    .header h1 {
+      font-size: 30px;
+      font-family:Garamond;
+      color: black;
+    }
+    
+     .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #99FF33;
+      margin-right: 20px;
+      font-family: freebooter;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: black;
+      padding: 35px 20px;
+      font-family: freebooter;
+    }
+
+
+    .header .social a {
+      padding: 0 5px;
+      color: #222222;
+    }
+
+    .left {
+      float: left;
+      width: 180px;
+      margin: 0;
+      padding: 1em;
+    }
+
+    .content {
+      padding: 1em;
+      overflow: hidden;
+    }
+
+hr.dashed {
+  border-top: 3px dashed #bbb;
+}
+
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 250;
+      height: 500px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+.main img{
+    width: 350px;
+    height: 500px;
+    border-radius: 50%;
+    display: inline-block;
+     border: 3px solid #99FF33 ;
+}
+.brand img{
+  border-radius: 25px;
+  padding: 20px;
+  width: 250px;
+  height: 300px;
+   display: inline-block;
+  border: 3px solid  #FF33CC;
+}
+
+
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.glow2 {
+  font-size: 50px;
+  color: #fff ;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+@-webkit-keyframes glow2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.carousel-inner img {
+      width: 100%;
+      height: auto;
+}
+  .scrolling-text-container {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+ }
+
+.scrolling-text {
+  display: inline-block;
+  animation: scrollText 10s linear infinite;
+   font-family: system-ui;
+   color:#e75480;
+   font-size: 20px;
+   
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+      
+    .about-me img {
+      width: 50px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 5px solid  ; 
+      padding: left 20px;
+    }
+
+    .about-me-text h2 {
+      font-size: 30px;
+      color: black;
+      margin: 0;
+      font-family:Garamond;
+    }
+
+    .about-me-text p {
+      font-size: 15px;
+      color: black;
+      margin: 10px 0;
+      align: right;
+    }
+
+    .footer {
+      padding: 10px 10px;
+      background-color: #99FF33;
+      color: black;
+      text-align: left;
+    }
+
+.column1 {
+  float: right;
+  width: 22.33%;
+  padding: 15px;
+  
+}
+
+/* Clear floats after image containers */
+.row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  float: right;
+  width: 30.33%;
+  padding: 5px;
+  
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+    .navitems input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+.navitems .search-container {
+  float: right;
+}
+
+ 
+
+.navitems .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .navitems .search-container {
+    float: none;
+  }
+}
+
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>BRAND SHOPPING</h1>
+    <nav class="nav-items">
+       <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+    </form>
+  </div>
+      <a href="#">Profile</a>
+      <a href="Wishlist.html">Wishlist</a>
+      <a href="cart.html">Cart</a>
+      <a href="login.html">Login</a>
+       <a href="register.html">Register</a>
+    </nav>
+    </header>
+
+   
+          <img src="https://as1.ftcdn.net/v2/jpg/01/97/78/66/1000_F_197786629_o8He8FR20m6EWRwF0rwWhaWUE5viQUf4.jpg" alt="" width="1350px" height="600px" />
+        
+
+    </section>
+
+    <main class="content">
+    <div class="scrolling-text-container">
+    <div class="scrolling-text"><b>Sale is Live!!!&nbsp&nbsp &nbsp &nbsp &nbsp Grab discounts and Offers now !!!&nbsp &nbsp &nbsp &nbsp &nbsp Shop Now!! </b></div>
+    </div>
+
+     
+     <div class="container1">
+  <h2><center>Men</center></h2>
+  <div class="inner-content">
+      <img src="https://nextluxury.com/wp-content/uploads/Rugged-Style-Ideas-for-Men/Rugged%20Refined/Rugged%20Refined%20Rugged%20Style%20Ideas%20for%20Men%20-basharalhadad.jpg"/>
+    <p><center>Click here for Men's clothing.</center></p>
+  </div>
+</div>
+
+<div class="container2">
+  <h2><center>Women</center></h2>
+  <div class="inner-content">
+   <img src="https://images.unsplash.com/photo-1513094735237-8f2714d57c13?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29tZW4lMjBmYXNoaW9ufGVufDB8fDB8fHww"/>
+    <p><center>Click here for Women's clothing.</center></p>
+</div>
+</div>
+
+<div class="container1">
+   <h2><center>Kids</center></h2>
+  <div class="inner-content">
+   <img src="https://images.pexels.com/photos/1620760/pexels-photo-1620760.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
+     <p><center>Click here for Kid's clothing.</center></p>
+  </div>
+</div>
+
+<div class="container2">
+  <h2><center>Accessories</center></h2>
+  <div class="inner-content">
+     <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZmFzaGlvbiUyMGFjY2Vzc29yeXxlbnwwfHwwfHx8MA%3D%3D"/>
+    <p><center>Click here for Accessories.</center></p>
+  </div>
+</div>
+
+
+<div class="container2">
+  <h2><center>Men Footwear</center></h2>
+  <div class="inner-content">
+  <img src="https://assets.ajio.com/medias/sys_master/root/20230601/csJ9/6477bd5bd55b7d0c632e613d/-473Wx593H-466221408-black-MODEL.jpg"/>
+   <p><center>Click here for Men's Footwear.</center></p>
+  </div>
+</div>
+
+<div class="container1">
+  <h2><center>Women Footwear</center></h2>
+  <div class="inner-content">
+     <img src="https://images.unsplash.com/photo-1534653299134-96a171b61581?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdvbWVuJTIwc2hvZXN8ZW58MHx8MHx8fDA%3D"/>
+   <p><center>Click here for Women's Footwear.</center></p> 
+  </div>
+</div>
+
+<div class="container2">
+ <h2><center>Kids Footwear</center></h2>
+  <div class="inner-content">
+      <img src="https://5.imimg.com/data5/SELLER/Default/2021/8/FY/VW/NC/55077823/pari-pink-flower-4-500x500.jpg"/>
+   <p><center>Click here for Kid's Footwear.</center></p> 
+  </div>
+</div>
+
+<div class="container1">
+  <h2><center>Beauty</center></h2>
+  <div class="inner-content">
+    <img src="https://i.pinimg.com/736x/fe/e9/e9/fee9e9f84adde0350fdbcf76c987236b.jpg"/>
+   <p><center>Click here for Skin Care and Makeup.</center></p> 
+  </div>
+</div>
+    
+
+
+
+
+
+
+<hr class="dashed">
+<h3 class="glow2">Shop Top Brands</h3>
+<br>
+<br>
+
+
+ <div class="row1">
+  <div class="brand img">
+  <div class="column1">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUdRng7Rz2RrpfMCWGWGWlgX2dsO5NcxG_iPfRd6m5PjtNvjlks6L4dQzbMk7y8QcY6SI&usqp=CAU" >
+  </div>
+ 
+  <div class="column1">
+  <img src="https://c.static-nike.com/a/images/f_auto/dpr_3.0,cs_srgb/h_500,c_limit/g1ljiszo4qhthfpluzbt/123-joyride-cdp-apla-xa-xp.jpg">
+  </div>
+
+ <div class="column1">
+<img src="https://cdn.kobo.com/book-images/d1124b55-c12c-4f25-bcb6-7c2260b344b4/353/569/90/False/coco-chanel-9.jpg" >
+</div>
+
+
+ <div class="column1">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLzYxh7J4B084klHgMXHtNwnJTf_1jZQgRwA&usqp=CAU"> 
+</div>
+
+ <div class="column1">
+<img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/p/q/d/7-iq9203-7-adidas-arcngt-silvmt-seimor-cblack-original-imagr5vge5fcy7fw.jpeg?q=90&crop=false">
+</div>
+
+ <div class="column1">
+<img src="https://assets.ajio.com/medias/sys_master/root/20210319/4JHl/60539d69f997dd7b644de96d/-473Wx593H-460784388-white-MODEL.jpg">
+</div>
+
+ <div class="column1">
+<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgVFhYZGBgYHBoaGBgcHB4YHBwaGhoaGhgaGhocIS4lHiErHxoYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QGhISGDEhISE0NDQxMTE0NTE0NDQ0NDE0MTQ0NjQ0NDQ3MTQ0NDQ0NDQ0NDQ0NDQ0NDE0MTY0NDQ0NP/AABEIAOEA4AMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAQIDBQYAB//EAD8QAAIBAgQCCAQDBgUEAwAAAAECAAMRBBIhMQVBBiJRYXGBkfATMqGxUsHRQmJykqLhBxQjwvEVM7LSJFOC/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAIxEBAQACAgICAgMBAAAAAAAAAAECEQMxEiEEUUGhEyJhUv/aAAwDAQACEQMRAD8AH4PRyoBLdSPvaUmCraWHZDhW750FjmEblECFaL8aEG6RrPBhWiF/fv3+UEr1ILVqRztB3gV/EaeYX9+7/eYTilGzGeg1RpaZDjeFKseySrGfoPlYHsM2VLjV1AvymMqJYyWjVI5xKr0PhlW4vzltnsL2mb6M1s6+es0LG+glQ+mSY5xJEAAkVR5UROYO5krmQuYAeIMqsQ0scSZUYhpmqDrvA3aT1TBXMKRjIyYrGNJkHFpGzTmMYYHFohM4mNJgegUMTt94emJv/wA+/dpQKCIXTJmtouPj9/n9PvFFbxgSg+/fcJJ79/SUGfG/X39Y/P78yP0+sEX76R4b36QCBUjS0jX39YpPv1kCVJW47CB1ynf9k/ke6Wbe/U/ofWD1D2+/f5wMFjsOVJUixEr7zbcXwHxFuLZgPC47JjMTTKnXTtmVajoY1847x9ptEewmK6FsAHJ7R9poquNzGym/1mp0iwavfaRs8iRDud413A9+cIeWkNQyI4gdsZnvKqDEvoZTYhpbYhNJS402maoKoZC5jmaQsYHMZGTFYyMmQcTGkziYhMBpMSLOgegVMNY7RUS0s69IQYU7GaR1OnCUpdsSkD718PfdCUB7PzlEfwPf/Eb8KXXC6Cs2XKGawZr/ACoGJCiw3Y2J10tKvpZg3pIa9L9jrMlyUdRq2jElGAu2hsQDoDa82GCn/edlg/CeLJXQMLA21HYecsgwPfKBcvv35+p7JBUp++XvT7y0NIQHEoeQPPbbYW59xgDU8EGOrPc3yqgBY2+YnMQFAvueZtM50o4GyL8QdYbN1cpB5BluQNjYgkGx5i01+BLdfUg/D6pA1DKz5rA3BPWpnXtEZUdnw9Q1FuVW7LbKbZFfL689Jmjy/A4hlawJGYgGeh4FERQx3tznnmNpfDcqDcCxVvxKbFW8wQYUnEnbQsYlVssbxhR8sqnx7NzlN8aTUqsbFrRqSxoNAMDhWaxtL7DYCwlKEdJl+Jt1iJtauHVAWaYPitcM7EbXkqBGeMLRhaNLSKeTGGJedeAhjY68aYCTrzokD2Fk7vfu0HK/pLB109JXu+pm0TILbmO+Io3gNavb3/eCLWJPvWQa7hVMOtdQAfi01y5jYEqhpspI1FuoT3VBGYnDGlSr/EtlNiOszjKKaBvm+XVW0HZfnKrhnEmom9gynUob2uNAQRqrWJFxyNtoP0m4lVxKGmiZFb5yTdiPwi2gB9YTTAdH67JUUA/MQCJ6dhadgOZmT4JwAo4d9x8o7+2a0nKIinValoC+JkGMxUgoEsYF1wrEBGOdcyHcC1x+8vK++nPyBgXSriarTdKSu7upVbIwtfS7Eiwt9ZPSWK+ul5LB55xzh7pRoO9g+XIwHIC5S/fl0lGJ6N0vVDh3B1bTLbtBvf7zzkyVUi1Jd8Bw2dxfYSgmt6GUy2bsBlg1+Dw4UWA2hFVwoiuQi8pmOO8WyggHWVkJ0h4vuimZFnvHYmuWYkyEmS1S3iXiTpFdedeJOhC3iXiExLwFvEvCMPgaj/IjHy09ZdYHonVexchF9T+gjQ9Gd+rzlPWqayxGqn3ylTXNjNBja6Q/A8OJ1MhwFDOw+sv1GUWHKAOcIojGdV0jq9S8iSlzOplCr2n0gWOxVtLyTHYnLpKHEVCxktDxULGW2DpWEAwGHubmXeFwrubIha255DxJ0Em5PdXVvRpe0rsRjbGwlri+D4gDRAfBgZUng2JuSaLHwKf+0z/Jj9xr+PL/AJoDFq9QMDtYzCMLG3ZpPSsRg6wBHwXvb939ZguI8Nq02YvSdBe9ypt/NtJ5Y3qlxyncA3np3RXAClh1J+ZgHN+1gDbyGk894RhPjVqdPkzDN/CNW+gM9I4lxBUXIvzbWsRy7xNxgJxvigQETB47FF2JJltj8HWqEsSgHeT+koq+HZTa4Pgb/eLRDedEMS8gdedOVCdgT4C/2hCcPqtsjeYt94UNOvDTwmt+A+RB+xklHgdZiAVyg7kkWHkDeEDYbBM4LbKOct+GU6akXXXv1lm9AKgRdgLX9+srlolXuRoZVabD4qmBobS0wjgi4a8zFPLyljw+plb7+zLKi7Vb69o089pU4imS0M4Ric9FG36tj4rp+UmZBeBJwunlF4XWvy8/X/iR4YTV8EwwFFmtqxI8l0t65pjkz8MfLTeGHllpklHrOqA2sqknkACT6CXXDuDJWxDWfIiaugt1iSbWB+UC2pmzoUaVJcqKNOSjn3nc+czhyzLHy6bz4rjlca8jXg2JqsQKbKO1xkAv3HU+QMu8D0MTd3ZjztZV8Nrn6TZ/DtcnUkkk+MiLge/L7CeXPnyt9enow4cZOtq/CdH6CbID/FdvoZZmkFFlFhyA0H0kX+cQbkRy41GIGa5OwGp7Zyue+66zHXURvT9ZC9KEVnEjBvOdrcDvh/OB4jCqd1F5bE2glY5jJVihfo5QLfEC5HsRmUAHXt5HxMz3FuH5amW97EAnt07PSbtUmd6TYaxDjmNfFf7Wnq+NyW5eNrzfI45MfKRTLglOhmU4x0aqIxan1lPK9iJsUfS8e1TSxnu08Lzj/o9W4zKBfc3vbylwnC6dJb5c7dra+g2E0Na0FqIpGvv2Y0qXAlWXRQPK32kjWjeF4F3P+kjMNi2yDxZtBA6tY52U/MrMrDmGUkEeVjGwUzCRO0HapG/E9+++A9xeNamDEz7zvie/flAhNC2x9+cIoVLGx/O0YasY1eAZ0Qr3R0/A9x4MP7TQKLzHdFa4XEOguQyX8Cut/rNitQA7yxBlFbTW8AcPQy/hLA+fW/3THVMaii5YAd5lx0L4sjtURTfQPzt+E6891nHn1cXbh35elb004GHRilwxBtroSNvDxlDwL/EWqFWnVAdhpe+RjbtFrE+QnrVTCIxuyg+Ivb1kNbhdNtGRGHYVB+4nkw/ruWbj18mfnq71Y8+xHT07Ci5PcVPv0jKWN4nibfCwvw1P7dUlR/Lo1u8Az0fC8MpUxZEVANgqhR6CTVSFEWY9+P7ScmXW/wBMdwzotVJzYmuX/cQZF77sbsfIrNKlFKa5UUKo5AW9e2c1eC1q05Wz8Oure6RzIi8hxuIygdp2jMM2kxfTUmxp1iOJyvaR1X0kuqsNJlfx2lnpG269by5j0N/KTO8QvfQ+9LS4Xxyln4M8fLGz7YilU0t2RfiSLiGH+HUZb21NvDl9LQZnPPnPry7m4+RZq6TO95oeifD6FVWLrndWtZjdQLXU5Of7Q61xpMq7S46FYzJiSnKoth3sl2H9OeWjeijawGw0HIAdwGg8p530swuTFu3/ANgWotu+6v8A1KT5zdV8ezP8NMofOQ2a7ZUUE52UEWBNgNed+6UHTKiGp0cQQLrdHsQwGdbnUb2ZMt++YgxrrIi0ldr/AFkTrOgYz+/D2YmeRsZwMgUvEM6KBAI6DYVs9RyNlVQf4tT9ptjSU7qD4gSr6MIBSY2tmc+YAt+subSxGZ6S8ERlDoMroQQR8p56r5cpt+iWKp1kWooC1FGV1HI21GnLYjymc6RY74OHZx81gF/ibQfcnyjVwL0SlWho6qqst7B1UDQ9/YZw5+Pym53Hfh5JjdXqvSFxR2vHriu+AcEx1PFUsxXUNlYEWZWABIPMbww8KU/K7L53+88UmT17x/IhaxOgkONqBRc7xqYFk2e/iP0gfEFdhaZyt01jjjcvXSvGKZjoISiEi58TGUqeUawfHY0hCq89PKYkdcr9Bq753vyGghKGAYZwok/+YElWQatSI9bSBnFdkaXY8pn2skJXrWiUqkjemTH0KRlFL0pofLUHgfK1vv8ASZn4tpvOJ01emyXuTtznnmIBVrdk+l8fLyw19PmfJx8c9/Yhn+kbhcUUqI67o6t4gEXHmLjzgwMVafbPQ4PV+I0gzqGD1A6KURToCjAsxDHJYgp81zvYbyPiXDTVw1aiVVWYM6IrZsrE50ubD9sHl3QDo9iv8xhENzmovkfLfOVWwOUqCwJRlPV1JFucM4a6CrkpqwtnDuSuZszBlDBbsStst2IIF766TOh5rRPVB7hG1Wll0iw/wsTUSxAzZ15DK/WFvAkjylYRNAcicBHskTLA68UGIFki0yYV6AtAIoCiwGw7ohtJzIKgsdJplkOmdfM+HpfslgzeoC/7prC8wfHHNTGIg5OPIC36GbgDTykgmwmOai5dLda2YHZrbX7DqdZeYHpKjMFYFG7DqD3q3OZh4NUF9Dt79DOPLwzL3PVduPmuPq+49FOMG+tvAyWlUVhoQe7nMDguMvQIBOZe/cfrLfCdM8JUYozBXWwJIKrfuYjSeLLiyl9x65yYWeqsON1cosu8pdx1jr2S9egtYXR7g7bH0MGq8NFJb7mctad5ZrSqrJqoW57RJUoNvaMNWxvpFWqx0uZOz3EuS28cHUbmQMhO5jVpy+MN0Q+JW2gv9INiMUQCzEIoFySbAAdpO0reKcao4cEO135IurefJfOYLjXGKmIbrnKgPVQfKO8/iPefK078fBcv8jhyc8x9d1pMf0zpISKamq34j1F9TqfQeMqMRihVy1QLZxmIGwa5DAX5Ag7zMV+Xp6S24RVvSZeaOCP4XBv9VH809mGGOPTxZ8mWXY4NEc3jFaOBnRhqv8PsVaq9FvlqJcfxJv6qx/lmxw3BuqudjcBSFWyojq18yKoCjbmCe8zy3hWLFLEU6hY9Vxff5T1X88pM9B4h01pJpTU1D+L5V8iRc+nnM2X8Cs/xDwYzUqtt7o3l1k/3+kx+SXPF+kVXEDK+UIDmChdiLgHMbnmecqhWA0vNSBopGOCCNOIB2MgxOLVBdvLtMqi1Qdkkyyuw6YusuanQYpvnIstt75msNpZYfDOP+4pVhup32vy9YRuoPiIRIK638ZUefDEKcetgeqWVjvrdjf0M3Sm47ZjqPC3TGMzLo7AKe0HrN9rec2oTS40kggqJBaqesNeQMt5QFWW497GZ/FUMuZgADcXNtbEdXXyPrNO1PSVmMpfMO1fqDcfnM0UOGx1Wkwem7IR2G3qNj5zX4Tp1nTJiFIP401B7yu48r+Ex9WnaQkTnnx45dx0w5Msb6r1PC4IOgqKysjahgbgiSgBT2zAcA45Xw1whDIdSjAkXO5W2qn6d0scR0rqN8qIpPM3b6aD7zyX4+Uvrp7J8nGz+3bUYnEqil3YKo3J+w7T3TCcc6UvUulG6Jrdv22/9R4a9/KB8QxdSsc1Ry1thso8FGggT0Z34+CY+77rhyc9y9Y+orjGMYY9KQvTndwRFMwI52uPIa/S8m4C1quU7OrJ5nrL/AFKsRARYjkfLTX85Ph+F1GYNTQlAysrXC9h3JFyNtOYhBR7o9UJhuPpBajquwY/eQE2BJ5ShjZUGZiAIMnEUJsLw48KvZ6il2OyC+RL7XtqxvoTtvuBeG4nh1NKQd0RWOiIFVWJ161xqANNyQb2gVGJr5bBVLO3yqNSfIQI4Sox67ov7ty1v5QR9YemORHDGzCxVlF+srCxGYbcj5RBxiknyUSxGoNR7gHtyqBf1gpcBhGUXLKy3IBW+4tcEMARuOXOW/BKOGWs1XEEHKq/CDfLmv1r30va1rzN4nilV2LFrX/CAvKwAtsAABYdkhS51JJ8dYHoT9KKFJiQ71Wa6/uKGPI8htsTtLjoxh6FRyai5mYDJfRBlFgoUcgAAL32nlrJdZq+jGOYoDfrIR6j2JRrTGMY68bKirbr4tABolMt5ubD7SzYGU+AqXxde3Jaa/S/5y7vIBai89uV/7SJxDHW8gelKBmNoFiEuw8beun5yxYdvfBa6C29v02kGYxlKzEdhMFRJb8WW7XUMxbWyqWPfoBeRYHo/jauqYWpbtcCmP6yD9JKoZVG0cRNRgugeKb52pUxp+0zt6BQPrLVehNFLrVxVmALEIqobAFibMWNrAnaEYA05FWyqLkgT05Oi+BTLZKlZibKM51OQVBsyrbIQeyaDC8Fw9LWnQRCQLkKAT4ncybV4SWVvl63gL/aQvTP4T52E33TFFXE1Bzsh8sgH5THVSTflKAPglSQRyVxbsNwfykCYbM9NRuzqnmxFpbY7Kpo30D0mXzVwR9vrBSxDB6ebOjKykroCD+8LQLLiDH4j2/E33Mr3xIHO/cP1grl2+dift6RyU4BX/V6wUKr5VGg0DEDsuwgFZmc5nYse0kk/WE/DnMkorykTLC2SRlJFQhJOixAskUQJhtDuj1fJWKcnH1gKGcWKlXG6n39bQPVIxhOLRpYGaZUnADevin/fC/yi0vSsoOiVTq1Tveq/30mgvIImOvZELRGMR5Q1++Q1KQIjmMjZtB798oGx6EH/AEHT8Dm3cGAP3vLPigYUzlZU6wvmc0wRf5fiDVL6aiY/olxg0XqIyM6uEIYWspU1L3v2jLt2Qrj/APiClA5Uolz3uEHn1TMWexZohcVHyNndEqICjMwYU0YKKnygZkOmly1+cOrUXeo5COEqIqalAAR8RWLAnNsykWmSw3TPF1lzqlKkvgzt63A+kip8dxLly+IewtZUVE37wt/rLqjUJwFhYXQgOlRVZc6qfhsjpbS63a47AAOQlnXxdNBepURbbksFF+ehOk8zxfEHNwWdv43Z/oxIlZUsdSI0Dek+KSrjHem6uhp0xmU3XMGe4uNDpb1mdroSxtDnq2FhpAnJMdKE4/8ALhmHLOp8QyH84r1Mw02ncWT/AOOv7lX6OhB+qiQYd7qB3Sh3w48JHgRSJFR2jGElMYwlA7iREQlhI2WQQhZKFiASRVgMAsZI6XB8DEdJLSN4HpTLB6gkoqSKq4ImmVJ0OI+E5vu7E+s0DTLdDGOR+5zNIWP/ABJAhMaz+UjZo3P9OUoV25xrW5xhaMZoBWFBI00FyJjePG9W3fNlw89Rv4j9hMjxun/ref5yVY1WAp5aA8INgtn13MsKZ/0RbawgOAIs/iPzhAtddTIGEnxDanSDuYAjRtpKw1jktCg8VTLUay/uhx4owY/03lXgm0mjppnYLsGDKf8A9KV/OZzDD6SUGhohMao0j7Shs4rHATiIVEyyBxCiJE6wB49TEInAyCaNTRoivHsOfZKPQ7SGqmh8I7NI61Syt4H7SsqDoTWsjr+9eaRnmW6Ft1H8b/SaZxJBA51jCYrRgaUKTEPv9Il514BOEY2cd4+o/tKTjNK5vz7ZdYQ6kdo+3syv4qmkhFhw9yaAB7LSDCtq4i8Ne9MDs3i0RZyO0SgPEbwciGYtdYMZBA6zgsewjYWFDWII5ESm4rT+HiHW1gTmHg4DfmR5S9SntKvpdSKvTf8AEmUnvQ/ow9JKBaZvJhA8O+0MUwpbRto+dKGGRuJKZG0AdhGFZM4jCJFMEejRlo9TA38hr/K38LfadOmmFB0L+RvETTPOnSQDnf32SF/1nTpRyRVnTpBPhfm8jBuI7GdOlC8G285P+2J06APj/f1go3E6dIpj7e+2N5Tp0LBFLlAel/8A2qX8bf8AiJ06L0igw8NWdOkVJ+k59os6UMaJOnRRC0Y06dIphnCdOgf/2Q==">
+</div>
+
+ <div class="column1">
+<img src="https://r.lvmh-static.com/uploads/2014/10/icone-9-1096x1248.jpg">
+</div>
+</div>
+</div>
+
+
+</div>
+
+<hr class="dashed">
+
+<p><h2 class="dior">Shop DIOR Now!!!</h2>
+<iframe height="500" width="1350"
+ src="https://www.youtube.com/embed/I10XB1-IIbA?si=t8KYOuEYRFRwWYUm&loop=1">
+      </iframe>
+<h3 style="color:#FF33CC;font-size:25px"><center>DIOR is Available Now!!!</h3></p>
+<br>
+<br><br><hr class="dashed">
+
+
+<h1 class="glow">Trend Zone</h1>
+<br>
+<br>
+
+  <div class="row">
+  <div class="column">
+  <div class="main img">
+      <img src="https://www.instyle.com/thmb/NGwhWkxz45Z7-UrlXs37OZvrznI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1213673110-f06e479f9e5944b9aa46e75abab906a5.jpg"/>
+  </div>
+ </div>
+
+
+
+  <div class="column">
+ <div class="main img">
+      <img src="https://assets.vogue.com/photos/640a5afca825e22da50e0ba3/master/w_1600%2Cc_limit/00034-gucci-fall-2023-ready-to-w.jpeg"/>
+  </div>
+ </div>
+
+
+  <div class="column">
+ <div class="main img">
+      <img src="https://www.instyle.com/thmb/5uCsdwPK7Te7A4EX-bOvj8SwtX0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/springfashiontrends4-27c6ad0206c8479bab7997f699da4bc8.jpg"/>
+  </div>
+ </div>
+</div>
+<br>
+<h3 class="glow2">Spotlight on Current Trends</h3>
+<br>
+   <div class="row">
+  <div class="column">
+  <div class="main img">
+      <img src="https://i.pinimg.com/originals/6e/10/27/6e1027e2c70f9bd233bbc08caf0d11b0.jpg"/>
+  </div>
+ </div>
+
+
+
+  <div class="column">
+ <div class="main img">
+      <img src="https://i.pinimg.com/originals/6a/8f/b5/6a8fb535f80fd7110337f7c9f3fa20a0.jpg"/>
+  </div>
+</div>
+
+
+  <div class="column">
+ <div class="main img">
+      <img src="https://i.pinimg.com/474x/0a/8c/cc/0a8cccb87d362c8496b44ba03375bdba.jpg"/>
+  </div>
+ </div>
+
+</div>
+<br>
+
+<hr class="dashed">
+
+<div class="container3">
+  <h2><center>International Brands</center></h2>
+   <div class="inner-content">
+   <p><center>Click here for International Brands.</center></p> 
+</div>
+ </div>
+
+<div class="container4">
+  <h2><center>Wedding</center></h2>
+   <div class="inner-content">
+   <p><center>Click here for all Wedding Needs.</center></p> 
+</div>
+</div>
+
+<div class="container3">
+  <h2><center>Sports Wear</center></h2>
+   <div class="inner-content">
+   <p><center>Click here for Sports Wear.</center></p> 
+</div>
+</div>
+
+<div class="container4">
+  <h2><center>Sarees</center></h2>
+   <div class="inner-content">
+   <p><center>Click here for Sarees.</center></p> 
+</div>
+</div>
+
+<div class="container4">
+  <h2><center>Sneakers</center></h2>
+   <div class="inner-content">
+   <p><center>Click here for Sneakers .</center></p> 
+</div>
+</div>
+
+<div class="container3">
+  <h2><center>Western Wear</center></h2>
+   <div class="inner-content">
+   <p><center>Click here for Western Wear.</center></p> 
+</div>
+</div>
+
+<div class="container4">
+  <h2><center>Kurtas</center></h2>
+   <div class="inner-content">
+   <p><center>Click here for Kurtas.</center></p> 
+</div>
+</div>
+
+<div class="container3">
+  <h2><center>Watches</center></h2>
+   <div class="inner-content">
+   <p><center>Click here for Watches.</center></p> 
+</div>
+</div>
+</main>
+<hr class="dashed">
+
+
+ <img src="https://png.pngtree.com/template/20220427/ourlarge/pngtree-best-sale-banner-with-beautiful-spectacled-girl-peeping-from-behind-the-image_1462318.jpg" width="1250px" height="500px"/>
+
+
+
+    <footer class="footer">
+     <div class="about-me">
+     <div class="about-me-text h2">
+         <h2>BRAND SHOPPING</h2></div>
+      <div class="about-me-text">
+       <p> Brand Shopping is the only platform for shopping all the branded items</p>
+                                             
+      <p> connect with us on &nbsp;&nbsp;
+           <img src="https://media.istockphoto.com/id/660687774/photo/collection-of-round-popular-social-media-black-logos.jpg?s=612x612&w=0&k=20&c=e9tCLGuOcipS0V0Qj3jB68BjxDZHMm_-ZfQ7BzBIPLk=" /></p>
+    </div>
+  </div>
+</footer>    
+  
+</body>
+
+</html>

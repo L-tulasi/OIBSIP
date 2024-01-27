@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+<style>
+
+
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+  background-image: url('https://cdn.aarp.net/content/aarpe/en/home/retirement/planning-for-retirement/info-2023/relocation-destinations-without-extreme-heat/_jcr_content/root/container_main/container_body_main/container_body1/container_body_cf/container_image/articlecontentfragment/cfimage.coreimg.50.932.jpeg/content/dam/aarp/retirement/planning-for-retirement/2023/07/1140-hot-thermometer.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+  
+.temp-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.temp-box {
+    background-color: white; /* temp box background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height:300px;
+    width:500px;
+    text-align:center;
+   
+}
+
+
+</style>
+</head>
+<body>
+
+
+<form>
+
+<div class="temp-section">
+<div class="temp-box">
+<h2><u>Temperature Converter</u></h2>
+<label for="inputScale">Select Input Temperature:</label>
+<select id="inputScale">
+    <option value="celsius">Celsius</option>
+    <option value="fahrenheit">Fahrenheit</option>
+    <option value="kelvin">Kelvin</option>
+</select>
+
+<br><br>
+
+<label for="outputScale">Select Output Temperature:</label>
+<select id="outputScale">
+    <option value="celsius">Celsius</option>
+    <option value="fahrenheit">Fahrenheit</option>
+    <option value="kelvin">Kelvin</option>
+</select>
+
+<br><br>
+
+<label for="inputTemperature">Input Temperature:</label>
+<input type="text" id="inputTemperature" placeholder="Enter temperature">
+
+<br><br>
+
+<label for="result">Result:</label>
+<p id="result"></p>
+
+</div>
+</div>
+</form>
+<script>
+    // Add event listener to perform conversion on user input
+    document.getElementById("inputTemperature").addEventListener("input", convertTemperature);
+
+    function convertTemperature() {
+        // Get user input
+        var inputTemperature = parseFloat(document.getElementById("inputTemperature").value);
+
+        // Get selected scales
+        var inputScale = document.getElementById("inputScale").value;
+        var outputScale = document.getElementById("outputScale").value;
+
+        // Perform temperature conversion
+        var result;
+        if (inputScale === "celsius" && outputScale === "fahrenheit") {
+            result = (inputTemperature * 9/5) + 32;
+        } else if (inputScale === "celsius" && outputScale === "kelvin") {
+            result = inputTemperature + 273.15;
+        } else if (inputScale === "fahrenheit" && outputScale === "celsius") {
+            result = (inputTemperature - 32) * 5/9;
+        } else if (inputScale === "fahrenheit" && outputScale === "kelvin") {
+            result = (inputTemperature - 32) * 5/9 + 273.15;
+        } else if (inputScale === "kelvin" && outputScale === "celsius") {
+            result = inputTemperature - 273.15;
+        } else if (inputScale === "kelvin" && outputScale === "fahrenheit") {
+            result = (inputTemperature - 273.15) * 9/5 + 32;
+        } else {
+            // If input and output scales are the same, no conversion needed
+            result = inputTemperature;
+        }
+
+        // Display the result
+        document.getElementById("result").innerText = result.toFixed(2);
+    }
+</script>
+
+</body>
+</html>
